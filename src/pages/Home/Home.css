@@ -1,0 +1,70 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.search {
+  text-align: center;
+  margin: auto;
+  margin-top: -7rem;
+  padding: 2rem;
+}
+
+.search-results {
+  margin-top: 1rem;
+}
+
+.weather-collection {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-list {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.weather-collection:last-child .weather-list {
+  border-bottom: 0;
+}
+
+.weather-date {
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  color: #868484;
+}
+
+.weather-city {
+  text-align: left;
+  padding: 2rem 2rem;
+  font-size: 2.5rem;
+  color: #868484;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .search {
+    max-width: 50%;
+    padding: 0;
+  }
+  .search-results {
+    margin-top: 6rem;
+  }
+  .weather-city {
+    text-align: left;
+    font-size: 3rem;
+  }
+  .weather-date {
+    text-align: left;
+  }
+}

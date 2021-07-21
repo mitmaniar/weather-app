@@ -1,0 +1,41 @@
+.weather-holder {
+  min-width: 52px;
+  padding: 1rem;
+  margin: 1rem;
+  color: #7b7979;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+}
+.weather-holder .time {
+  font-size: 0.9rem;;
+}
+
+.weather-holder .temp, .weather-holder .weather {
+  margin-top: 0.5rem;
+}
+
+.weather-holder .temp {
+  font-size: 1.2rem;
+}
+
+.weather img {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
+@media (min-width: 640px) {
+  .weather-holder {
+    min-width: 100px;
+    flex: unset;
+  }
+  .weather-holder:first-child {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .weather img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
